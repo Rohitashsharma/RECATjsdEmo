@@ -70,21 +70,37 @@ else{
   render(){
       return(
   <div>
-    <Titels />
-    <Form  getWeather={this.getWeather}/>
-    <Weather 
+           <div className="wrapper">
+             <div className="main">
+               <div className="container">
+                 <div className="row">
+                 <div className="col-xs-7 title-container">
+                 <Titels /><br />
+                 </div>
+                 <div div className="col-xs-5">
+                 <Form  getWeather={this.getWeather}/>
+                 <br/>
+                 <Weather 
   
-    City={this.state.City}
-    Countery={this.state.Countery}
-    humdity={this.state.humdity}
-    temperature={this.state.temp}
-    temperature_max={this.state.temp_max}
-    temperature_min={this.state.temp_min}
-    wind={this.state.Wind_Speed}
-    Description={this.state.Description}
-    Error={this.state.Error}
-    tem={this.state.temperature}
+                  City={this.state.City}
+                  Countery={this.state.Countery}
+                  humdity={this.state.humdity}
+                  temperature={this.state.temp}
+                  temperature_max={this.state.temp_max}
+                  temperature_min={this.state.temp_min}
+                  wind={this.state.Wind_Speed}
+                  Description={this.state.Description}
+                  Error={this.state.Error}
+                  tem={this.state.temperature}
     />
+                 
+                 </div>
+                  </div>
+                </div>
+             </div>
+         </div>
+    
+   
   </div>
       )
     }
